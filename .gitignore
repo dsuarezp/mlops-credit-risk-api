@@ -1,4 +1,3 @@
-cat > .gitignore << 'EOF'
 # Python
 __pycache__/
 *.py[cod]
@@ -11,9 +10,11 @@ venv/
 # Model artifacts
 *.pkl
 
+# CatBoost training logs
+catboost_info/
+
 # Environment variables / secrets
 .env
 
 # OS files
 .DS_Store
-EOF
